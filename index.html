@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ekolojik Kredi Sistemi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="recycling-logo.png" alt="Ekolojik Kredi">
+            <span>Ekolojik Kredi</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#nedir">Nedir?</a></li>
+                <li><a href="#hazirlayanlar">Hazırlayanlar</a></li>
+                <li><a href="#ekolojikKredi">Ekolojik Kredi</a></li>
+                <li><a href="#bizeUlassin">Bize Ulaşın</a></li>
+                <li><a href="#geriDonusum">Geri Dönüşüm Nedir?</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Okul Kaydı -->
+        <section id="okulKayit">
+            <h2>Okul Kayıt Formu</h2>
+            <form id="okulKayitForm">
+                <input type="text" id="schoolProvince" placeholder="İl" required>
+                <input type="text" id="schoolDistrict" placeholder="İlçe" required>
+                <input type="text" id="schoolName" placeholder="Okul Adı" required>
+                <input type="password" id="schoolPassword" placeholder="Şifre" required>
+                <button type="submit">Okul Kaydı Yap</button>
+            </form>
+        </section>
+
+        <!-- Öğrenci Kaydı -->
+        <section id="ogrenciKayit">
+            <h2>Öğrenci Kayıt Formu</h2>
+            <form id="ogrenciKayitForm">
+                <input type="text" id="studentName" placeholder="Ad" required>
+                <input type="text" id="studentSurname" placeholder="Soyad" required>
+                <input type="email" id="studentEmail" placeholder="E-posta" required>
+                <input type="text" id="studentNumber" placeholder="Öğrenci Numarası" required>
+                <input type="text" id="studentPhone" placeholder="Telefon Numarası" required>
+                <input type="text" id="studentClass" placeholder="Sınıf" required>
+                <button type="submit">Öğrenci Kaydı Yap</button>
+            </form>
+        </section>
+
+        <!-- Veri Girişi -->
+        <section id="dataEntry">
+            <h2>Veri Girişi</h2>
+            <form id="dataEntryForm">
+                <input type="number" id="wasteWeight" placeholder="Atık Ağırlığı (kg)" required>
+                <select id="wasteType">
+                    <option value="Yağ">Yağ</option>
+                    <option value="Tekstil">Tekstil</option>
+                    <option value="Pil">Pil</option>
+                    <option value="Elektronik">Elektronik</option>
+                    <option value="Kağıt">Kağıt</option>
+                    <option value="Cam">Cam</option>
+                    <option value="Metal">Metal</option>
+                    <option value="Plastik">Plastik</option>
+                </select>
+                <button type="submit">Veri Gönder</button>
+            </form>
+        </section>
+
+        <!-- Veri Görüntüleme -->
+        <section id="dataView">
+            <h2>Veri Görüntüle</h2>
+            <form id="viewDataForm">
+                <input type="text" id="viewStudentEmail" placeholder="E-posta" required>
+                <input type="text" id="viewStudentNumber" placeholder="Öğrenci Numarası" required>
+                <button type="submit">Verileri Görüntüle</button>
+            </form>
+            <div id="viewResult"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Torbalı Anadolu Lisesi Coğrafya Proje Ödevi Ekolojik Kredi Örnek Sitesidir</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
